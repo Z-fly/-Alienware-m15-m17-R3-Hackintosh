@@ -16,7 +16,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v debug=0x100 -wegnoegpu -igfxblr igfxonln=1</string>
+		<string>-v -igfxblr -igfxblt igfxonln=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Timeout</key>
@@ -50,11 +50,6 @@
 				<data>AAAwAQ==</data>
 			</dict>
 		</dict>
-		<key>USB</key>
-		<dict>
-			<key>FixOwnership</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -63,10 +58,6 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>DellSMBIOSPatch</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
 		<key>PanicNoKextDump</key>
 		<true/>
 	</dict>
@@ -76,14 +67,10 @@
 		<true/>
 		<key>DevirtualiseMmio</key>
 		<true/>
-		<key>DisableIoMapper</key>
-		<true/>
 		<key>DisableLinkeditJettison</key>
 		<true/>
 		<key>EnableSafeModeSlide</key>
 		<true/>
-		<key>EnableWriteUnprotector</key>
-		<false/>
 		<key>PowerTimeoutKernelPanic</key>
 		<true/>
 		<key>ProtectUefiServices</key>
@@ -104,20 +91,20 @@
 	<key>RtVariables</key>
 	<dict>
 		<key>CsrActiveConfig</key>
-		<string>0xFEF</string>
+		<string>0x0</string>
 		<key>MLB</key>
 		<string>00000000000000000</string>
 		<key>ROM</key>
-		<data>ACPft1I+</data>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>01/06/2022</string>
+		<string>10/05/2023</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP161.88Z.F000.B00.2201062107</string>
+		<string>MBP161.88Z.F000.B00.2310052037</string>
 		<key>Board-ID</key>
 		<string>Mac-E1008331FDC96864</string>
 		<key>BoardManufacturer</key>
@@ -135,7 +122,7 @@
 		<key>ChassisType</key>
 		<string>0x9</string>
 		<key>EfiVersion</key>
-		<string>1715.81.2.0.0</string>
+		<string>2020.41.1.0.0</string>
 		<key>ExtendedFirmwareFeatures</key>
 		<string>0x00000008FDAFF066</string>
 		<key>ExtendedFirmwareFeaturesMask</key>
@@ -158,16 +145,12 @@
 		<string>MacBookPro16,1</string>
 		<key>SerialNumber</key>
 		<string>000000000000</string>
-		<key>SmUUID</key>
-		<string>00000000-0000-0000-0000-000000000000</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>00000000-0000-0000-0000-000000000000</string>
-		<key>InjectKexts</key>
+		<key>InjectSystemID</key>
 		<true/>
 	</dict>
 </dict>
